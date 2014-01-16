@@ -30,8 +30,6 @@ module Puxun
       response = @conn.get '/servlet/SmsManage?method=sms_write'
       doc = Nokogiri::HTML(response.body)
 
-      # app.rb:32:in `<main>': undefined method `[]' for nil:NilClass (NoMethodError)
-
       if doc.css('#realNum').first.nil?
       	return  'real_num_nil'
       else
@@ -56,7 +54,7 @@ module Puxun
       response = @conn.post '/servlet/SmsManage?method=confirm', msg_info
       doc = Nokogiri::HTML(response.body)
       confirm_txt = doc.css('.right_TitleC0').text #确认发送
-      # p confirm_txt
+
       sendCountNum = doc.css('#sendCountNum').first['value']
 
 			confirm_data = {

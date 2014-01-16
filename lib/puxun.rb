@@ -66,7 +66,7 @@ module Puxun
 
 			response = @conn.post '/servlet/SmsManage?method=finish', confirm_data
 
-			return true
+			'success'
   	end
 
   	private

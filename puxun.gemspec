@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Puxun::VERSION
   spec.authors       = ["wikimo"]
   spec.email         = ["gwikimo@gmail.com"]
-  spec.description   = %q{puxun sms }
+  spec.description   = %q{pushing sms }
   spec.summary       = %q{send sms use puxun admin}
   spec.homepage      = ""
   spec.license       = "MIT"

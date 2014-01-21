@@ -1,29 +1,26 @@
-# Puxun
+# 普迅短信接口
 
-TODO: Write a gem description
+因信息管理原因，利用[普迅自身短信后台](http://duanxin.pushing.com.cn/)进行短信发送
 
-## Installation
+## 依赖环境
+需要leptonica，tesseract支持，主要为了做登录验证码识别。安装完毕后，请先在命令行下测试tesseract可用性，然后再测下rtesseract可用性，如果无法识别，请设置clear_console_output，查看错误输出信息。[可参看](https://github.com/dannnylo/rtesseract/issues/13)
 
-Add this line to your application's Gemfile:
+## 安装
+
+在 Gemfile 中加入:
 
     gem 'puxun'
 
-And then execute:
+然后执行:
 
     $ bundle
 
-Or install it yourself as:
+或通过以下方式安装:
 
     $ gem install puxun
 
-## Usage
+## 使用方法
 
-TODO: Write usage instructions here
+见测试文件test.rb
 
-## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request

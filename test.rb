@@ -1,12 +1,15 @@
 # coding: utf-8
-require 'Puxun'
+require File.join(File.dirname(__FILE__), 'lib', 'puxun')
 
 px =  Puxun::Sms.new
-# p px
+
 sms_hash = {
-	:username => '5311',
-	:passwd => 'g82720905',
-	:msg => '亲爱的会员请注意每日金币值，别超标哦【金币健康管理】',
-	:phone_num => "18157305082\r\n15857367715"
+	:username => 'xxx',
+	:passwd => 'xxx',
+	:msg => '亲爱的会员，今天你喝水了没有，记得及时补充水分【金币减重】',
+	:phone_num => "15012345678\r\n13212345678"
 }
+
 result = px.send sms_hash
+
+p result
